@@ -11,7 +11,10 @@ This following Tutorial will take you through the deployment of Azure Machine Le
 ## Data Resources
 
 You can get [MNIST](http://yann.lecun.com/exdb/mnist/) dataset (**train.tfrecords**, **test.tfrecords**) in this example by running the following code, [https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/examples/how_tos/reading_data/convert_to_records.py](https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/examples/how_tos/reading_data/convert_to_records.py)
- and put these files into ```data``` folder.
+
+Microsoft Research Open Data Beta - Is a collection of free datasets from Microsoft Research to advance state-of-the-art research in areas such as natural language processing, computer vision, and domain specific sciences. Download or copy directly to a cloud-based Data Science Virtual Machine for a seamless development experience. see [https://msropendata.com/](https://msropendata.com/)
+
+You can simply add any new data sets into your ```data``` folder.
 
 ## Exercises
 
