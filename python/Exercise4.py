@@ -8,10 +8,10 @@ except:
 #%% [markdown]
 # # Exercise04 : Train on Remote GPU Virtual Machine
 # 
-# Now we run our previous sample (see "[Exercise03 : Just Train in Your Working Machine](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/blob/master/notebooks/exercise03_train_simple.ipynb)") on remote virtual machine with GPU utilized.    
+# Now we run our previous sample (see "[Exercise03 : Just Train in Your Working Machine](/notebooks/exercise03_train_simple.ipynb)") on remote virtual machine with GPU utilized.    
 # Here we use remote virtual machine and conda virtual environment, but you can also use Batch AI pool sharing in your team, or run on your favorite docker images.
 # 
-# *back to [index](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/)*
+# *back to [index](/Readme.md)*
 #%% [markdown]
 # ## Save your training script as file (train.py)
 #%% [markdown]
@@ -23,7 +23,7 @@ script_folder = './script'
 os.makedirs(script_folder, exist_ok=True)
 
 #%% [markdown]
-# Please add the following ```%%writefile``` at the beginning of the source code in "[Exercise03 : Just Train in Your Working Machine](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/blob/master/notebooks/exercise03_train_simple.ipynb)", and run this cell.    
+# Please add the following ```%%writefile``` at the beginning of the source code in "[Exercise03 : Just Train in Your Working Machine](/notebooks/exercise03_train_simple.ipynb)", and run this cell.    
 # Then this source code is saved as ```./script/train.py```.
 
 #%%
@@ -36,7 +36,7 @@ get_ipython().run_cell_magic(u'writefile', u'script/train.py', u"from __future__
 #%% [markdown]
 # ### Step 1 : Get workspace setting
 # 
-# Before starting, you must read your configuration settings. (See "[Exercise01 : Prepare Config Settings](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/blob/master/notebooks/exercise01_prepare_config.ipynb)")
+# Before starting, you must read your configuration settings. (See "[Exercise01 : Prepare Config Settings](/notebooks/exercise01_prepare_config.ipynb)")
 
 #%%
 from azureml.core import Workspace
@@ -72,7 +72,7 @@ except ComputeTargetException:
 # ### Step 3 : Generate data reference config
 # 
 # You can configure to mount your preconfigured dataset (including train.tfrecords, test.tfrecords) from your ```Datastore``` in your compute target.    
-# See "[Exercise02 : Prepare Datastore](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/blob/master/notebooks/exercise02_prepare_datastore.ipynb)".
+# See "[Exercise02 : Prepare Datastore](/notebooks/exercise02_prepare_datastore.ipynb)".
 
 #%%
 from azureml.core import Datastore
