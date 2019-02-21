@@ -116,7 +116,7 @@ jupyter notebook
 - Open your notebook url (http://localhost:8888/?token=...) using web browser in your desktop.
 ![Notebook Login](/images/Notebooks.png)
 
-Simply paste into the password or token box the token in the 
+Simply paste into the password or token box the token recieved and press login this will load the Jupyter Hub
 
 - Create new notebook by selecting "Python 3" kernel (which is your current conda environment).
 
