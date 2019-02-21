@@ -1,6 +1,6 @@
 # Azure Machine Learning service Hands-On all for TensorFlow
 
-This following Tutorial will take you through the deployment of Azure Machine Learning (AML) service using TensorFlow along with the entire Machine Learning development lifecycle of explore data, train, tune, and publish.
+This following Tutorial will take you through the deployment of Azure Machine Learning (AML) service using TensorFlow along with the entire Machine Learning development lifecycle of explore data, train, tune, and publish. All student get $100 of Azure credit via Azure for Student for more details and get registered see [Azure Dev Tools for teaching] (https://azureforeducation.microsoft.com/en-US/Institutions)
 
 ## Data Resources
 
@@ -122,4 +122,6 @@ Simply paste into the password or token box the token recieved and press login t
 
 Now you're ready to start !
 
-See *Tsuyoshi Matsuzaki @ Microsoft* post "[7 Reasons to Use Azure Machine Learning Services](https://tsmatz.wordpress.com/2018/11/20/azure-machine-learning-services/)" for details.
+References
+
+Azure Machine Learning – [Notebooks & Resources](https://github.com/Azure/MachineLearningNotebooks)
