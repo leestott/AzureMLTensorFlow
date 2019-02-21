@@ -8,12 +8,12 @@ except:
 #%% [markdown]
 # # Exercise03 : Just Train in Your Working Machine
 # 
-# Fisrt, please train your script and model as usual.    
-# Here we don't use Azure Machine Learning services and just show our sample code using TensorFlow.
+# First, we will use the Data Science VM to run a simple tensordflow model
+# Here we don't use Azure Machine Learning services and just show our sample code using TensorFlow running locally on the DSVM.
 # 
-# *back to [index](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/)*
+# *back to [index](/Readme.md)*
 #%% [markdown]
-# Show top 3 images in test.tfrecords.
+# The following code will simply show top 3 images in test.tfrecords. which is located in your data folder
 
 #%%
 import matplotlib.pyplot as plt
@@ -39,7 +39,7 @@ with tf.Session() as sess:
         plt.show()
 
 #%% [markdown]
-# Train your model in local.
+# Now we start to train a model on the local Data Science Virtual Machine.
 
 #%%
 from __future__ import absolute_import
@@ -258,7 +258,7 @@ print('current working directory is ', os.getcwd())
 print('model is saved ', model_dir)
 
 #%% [markdown]
-# Predict using generated model. This code will be used in "[Exercise08 : Publish as a Web Service](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/blob/master/notebooks/exercise08_publish_model.ipynb)".
+# Next we are going to predict using generated model. This code will be used in "[Exercise08 : Publish as a Web Service](/notebooks/exercise08_publish_model.ipynb)".
 
 #%%
 import tensorflow as tf
