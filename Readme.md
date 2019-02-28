@@ -6,7 +6,7 @@ This following Tutorial will take you through the deployment of Azure Machine Le
 
 ## Azure access for Students & Educators
 
- All student get $100 of Azure credit via Azure for Student for more details and get registered see [Azure Dev Tools for teaching] (https://azureforeducation.microsoft.com/en-US/Institutions)
+ All student get $100 of Azure credit via Azure for Student for more details and get registered see [Azure Dev Tools for teaching](https://azureforeducation.microsoft.com/en-US/Institutions)
 
 ## Data Resources
 
@@ -84,7 +84,9 @@ conda install -y matplotlib tensorflow
 Create new "Machine Learning services workspace" using [Azure Portal](https://portal.azure.com/) see [Creating Azure ML Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/studio/create-workspace)
 Please make sure that **you must specify location (region) which supports NC-series (K80 GPU) virtual machines in workspace creation**, because workspace location is used when you create AML compute resources (virtual machines) in AML Python SDK. (See [here](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=virtual-machines) for supported regions.)
 
-## 3. Make Sure to Install ACI Provider in Your Azure Subscription
+## 3. Make Sure to Install Azure Container Instance (ACI) Provider in Your Azure Subscription
+
+Azure Container Instances offers the fastest and simplest way to run a container in Azure, without having to provision any virtual machines and without having to adopt a higher-level service. [Learn how to create and manage container instances with our quickstarts, tutorials, and samples](https://docs.microsoft.com/en-us/azure/container-instances/)
 
 - Remove azure-ml-admin-cli extension on VM as follows. (This extension is already installed on DSVM and prevents you from running ```az login``` command.)
 
@@ -127,10 +129,12 @@ jupyter notebook
 
 Simply paste into the password or token box the token recieved and press login this will load the Jupyter Hub
 
-- Create new notebook by selecting "Python 3" kernel (which is your current conda environment).
+- Create new notebook by selecting "Python 3.6" kernel (which is your current conda environment).
 
 Now you're ready to start !
 
-References
+## References
 
+All student get $100 of Azure credit via Azure for Student for more details and get registered see [Azure Dev Tools for teaching](https://azureforeducation.microsoft.com/en-US/Institutions)
 Azure Machine Learning – [Notebooks & Resources](https://github.com/Azure/MachineLearningNotebooks)
+Using Azure Machine Learning Services - [Tutorial and Documentation](https://docs.microsoft.com/en-us/azure/machine-learning/service/)

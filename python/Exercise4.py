@@ -9,13 +9,13 @@ except:
 # # Exercise04 : Train on Remote GPU Virtual Machine
 # 
 # Now we run our previous sample (see "[Exercise03 : Just Train in Your Working Machine](/notebooks/exercise03_train_simple.ipynb)") on remote virtual machine with GPU utilized.    
-# Here we use remote virtual machine and conda virtual environment, but you can also use Batch AI pool sharing in your team, or run on your favorite docker images.
+# Here we use remote virtual machine and conda virtual environment, but you can also use Batch AI or  Azure Machine Learning Compute see https://docs.microsoft.com/en-gb/azure/batch-ai/ pool sharing in your team, or run on your favorite docker images.
 # 
 # *back to [index](/Readme.md)*
 #%% [markdown]
 # ## Save your training script as file (train.py)
 #%% [markdown]
-# Create ```scirpt``` directory.
+# Create ```script``` directory.
 
 #%%
 import os

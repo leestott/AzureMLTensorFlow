@@ -8,11 +8,11 @@ except:
 #%% [markdown]
 # # Exercise05 : Distributed Training
 # 
-# Here we change our sample (see "[Exercise03 : Just Train in Your Working Machine](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/blob/master/notebooks/exercise03_train_simple.ipynb)") for distributed training using multiple machines.
+# Here we change our sample (see "[Exercise03 : Just Train in Your Working Machine](/notebooks/exercise03_train_simple.ipynb)") for distributed training using multiple machines.
 # 
-# In this exercise we use Horovod framework using built-in ```azureml.train.dnn.TensorFlow``` estimator, but you can also configure using primitive ```azureml.core.ScriptRunConfig``` for the training with TensorFlow and Horovod. (See [here](https://tsmatz.wordpress.com/2019/01/17/azure-machine-learning-service-custom-amlcompute-and-runconfig-for-mxnet-distributed-training/) for sample script with TensorFlow and Horovod using ```azureml.core.ScriptRunConfig```.)
+# In this exercise we use Horovod framework (https://github.com/horovod/horovod) using built-in ```azureml.train.dnn.TensorFlow``` estimator, but you can also configure using primitive ```azureml.core.ScriptRunConfig``` for the training with TensorFlow and Horovod. (See [here](https://tsmatz.wordpress.com/2019/01/17/azure-machine-learning-service-custom-amlcompute-and-runconfig-for-mxnet-distributed-training/) for sample script with TensorFlow and Horovod using ```azureml.core.ScriptRunConfig```.)
 # 
-# *back to [index](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/)*
+# *back to [index](/Readme.md)*
 #%% [markdown]
 # ## Save your training script as file (train.py)
 #%% [markdown]
@@ -24,7 +24,7 @@ script_folder = './script'
 os.makedirs(script_folder, exist_ok=True)
 
 #%% [markdown]
-# Change our original source code ```train.py``` (see "[Exercise03 : Just Train in Your Working Machine](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/blob/master/notebooks/exercise03_train_simple.ipynb)") as follows. The lines commented "##### modified" is modified lines.    
+# Change our original source code ```train.py``` (see "[Exercise03 : Just Train in Your Working Machine](/notebooks/exercise03_train_simple.ipynb)") as follows. The lines commented "##### modified" is modified lines.    
 # After that, please add the following ```%%writefile``` at the beginning of the source code and run this cell.    
 # This source code is saved as ```./script/train_horovod.py```.
 
@@ -36,7 +36,7 @@ get_ipython().run_cell_magic(u'writefile', u'script/train_horovod.py', u"from __
 #%% [markdown]
 # ### Step 1 : Get workspace setting
 # 
-# Before starting, you must read your configuration settings. (See "[Exercise01 : Prepare Config Settings](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/blob/master/notebooks/exercise01_prepare_config.ipynb)".)
+# Before starting, you must read your configuration settings. (See "[Exercise01 : Prepare Config Settings](/notebooks/exercise01_prepare_config.ipynb)".)
 
 #%%
 from azureml.core import Workspace
@@ -47,8 +47,8 @@ ws = Workspace.from_config()
 #%% [markdown]
 # ### Step 2 : Create multiple virtual machines (cluster)
 # 
-# Create your new AML compute for distributed clusters. By enabling auto-scaling from 0 to 4, you can save money (all nodes are terminated) if it's inactive.    
-# If already exists, this script will get the existing cluster.
+# Create your new AML compute for distributed clusters. By enabling auto-scaling from 0 to 4, you can save money (all nodes are terminated) if it's inactive. see https://docs.microsoft.com/en-us/azure/architecture/best-practices/auto-scaling 
+# If already exists, this script will get the existing cluster. The script below creates a cluster of  D2_v2 machines - vm_size='Standard_D2_v2',
 
 #%%
 from azureml.core.compute import ComputeTarget, AmlCompute
@@ -74,7 +74,7 @@ print(compute_target.status.serialize())
 #%% [markdown]
 # ### Step 3 : Prepare datastore
 # 
-# You can mount your datastore (See "[Exercise02 : Prepare Datastore](https://github.com/tsmatz/azure-ml-tensorflow-complete-sample/blob/master/notebooks/exercise02_prepare_datastore.ipynb)") into your Batch AI compute.
+# You can mount your datastore (See "[Exercise02 : Prepare Datastore](/notebooks/exercise02_prepare_datastore.ipynb)") into your Batch AI compute.
 
 #%%
 from azureml.core import Datastore
