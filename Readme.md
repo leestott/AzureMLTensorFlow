@@ -135,6 +135,8 @@ Now you're ready to start !
 
 ## References
 
-All student get $100 of Azure credit via Azure for Student for more details and get registered see [Azure Dev Tools for teaching](https://azureforeducation.microsoft.com/en-US/Institutions)
-Azure Machine Learning – [Notebooks & Resources](https://github.com/Azure/MachineLearningNotebooks)
-Using Azure Machine Learning Services - [Tutorial and Documentation](https://docs.microsoft.com/en-us/azure/machine-learning/service/)
+- All student get $100 of Azure credit via Azure for Student for more details and get registered see [Azure Dev Tools for teaching](https://azureforeducation.microsoft.com/en-US/Institutions)
+- Azure Machine Learning – [Notebooks & Resources](https://github.com/Azure/MachineLearningNotebooks)
+- Using Azure Machine Learning Services - [Tutorial and Documentation](https://docs.microsoft.com/en-us/azure/machine-learning/service/)
+- Azure Containers [Docs and Tutorials](https://docs.microsoft.com/en-us/azure/container-instances/)
+- Data Science Virtual Machine [DSVM](https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/)
